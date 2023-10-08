@@ -1,0 +1,20 @@
+
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: <%= Rails.application.credentials.postgres[:username] %>
+  password: <%= Rails.application.credentials.postgres[:password] %>
+  host: localhost
+
+development:
+  <<: *default
+  database: budget_buddy_dev
+
+test:
+  <<: *default
+  database: budget_buddy_test
+
+production:
+  <<: *default
+  database: budget_buddy_prod

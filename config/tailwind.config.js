@@ -1,16 +1,19 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*.{erb,haml,html,slim}'
+    './app/views/**/*.{erb,haml,html,slim}',
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+      colors: {
+        primary: '#3878c2',
+        second: '#60b524',
+        text: '#434b55',
+        subtext: '#989da3',
       },
     },
   },
@@ -19,5 +22,5 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/typography'),
     require('@tailwindcss/container-queries'),
-  ]
-}
+  ],
+};

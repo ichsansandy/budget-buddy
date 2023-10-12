@@ -15,6 +15,9 @@ module.exports = {
         text: '#434b55',
         subtext: '#989da3',
       },
+      maxWidth: {
+        wrapper: '1000px',
+      },
     },
   },
   plugins: [

@@ -11,6 +11,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
   </head>
   <body>
+    <% if flash[:notice] %>
+      <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
+        <%= flash[:notice] %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% end %>
+    <% if flash[:alert] %>
+      <div class="alert alert-warning alert-dismissible fade show mb-0" role="alert">
+        <%= flash[:alert] %>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <% end %>
     <main>
       <%= yield %>
     </main>

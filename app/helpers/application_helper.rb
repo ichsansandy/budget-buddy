@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ApplicationHelper
   def format_large_number(number)
     if number.abs >= 1_000_000

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class TransactionsController < ApplicationController
   def index
     @category = Group.find(params[:category_id])
@@ -14,7 +16,7 @@ class TransactionsController < ApplicationController
   def create
     @purchase = Entity.new(purchases_params)
     @category = Group.find(params[:category_id])
-  
+
     if @purchase.save
       EntityGroup.create(group_id: @category.id, entity_id: @purchase.id)
       redirect_to category_transactions_path(group_id: @category.id), notice: 'Purchase was successfully created.'

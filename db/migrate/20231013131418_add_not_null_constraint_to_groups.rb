@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class AddNotNullConstraintToGroups < ActiveRecord::Migration[7.0]
   def up
     change_column :groups, :name, :string, null: false

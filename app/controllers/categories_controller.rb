@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 class CategoriesController < ApplicationController
   before_action :authenticate_user!, except: [:index]
-  
-  def index
-  end
+
+  def index; end
 
   def home
     @categories = current_user.groups
@@ -20,10 +21,9 @@ class CategoriesController < ApplicationController
       ['🏥'],
       ['✈️'],
       ['🎓'],
-      ['📦'],
+      ['📦']
     ]
   end
-  
 
   def create
     @category = Group.new(categories_params)

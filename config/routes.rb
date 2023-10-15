@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users, path: '', path_names: {
     sign_in: 'login',
@@ -8,7 +10,7 @@ Rails.application.routes.draw do
   authenticated :user do
     root 'categories#home', as: :authenticated_root
   end
-  
+
   unauthenticated do
     root 'categories#index', as: :unauthenticated_root
   end

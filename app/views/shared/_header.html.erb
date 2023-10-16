@@ -2,11 +2,9 @@
   <div class="relative flex items-center justify-center w-full max-w-wrapper">
     <div class="absolute my-auto left-2">
     <% if back %>
-        <% if user_signed_in? %>
-          <% if request.path == category_transactions_path %>
-            <%= link_to(home_categories_path, class: "text-white text-2xl py-2.5 px-5") do %>
-              <i class="text-2xl text-white fas fa-angle-left"></i>
-            <% end %>
+        <% if user_signed_in? && request.path == category_transactions_path(:category_id) %>
+          <%= link_to(home_categories_path, class: "text-white text-2xl py-2.5 px-5") do %>
+            <i class="text-2xl text-white fas fa-angle-left"></i>
           <% end %>
         <% else %>
           <%= link_to("javascript:history.back()", class: "text-white text-2xl py-2.5 px-5") do %>

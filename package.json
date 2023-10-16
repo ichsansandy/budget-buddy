@@ -1,0 +1,8 @@
+{
+  "name": "budget-buddy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ichsansandy/budget-buddy.git",
+  "author": "Ichsan Sandypratama <ichsan2668@gmail.com>",
+  "license": "MIT"
+}

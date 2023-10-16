@@ -1,11 +1,9 @@
-# frozen_string_literal: true
-
 class TransactionsController < ApplicationController
   def index
     @category = Group.find(params[:category_id])
     @transactions = @category.entities
     @transactions = @transactions.sort { |a, b| b.created_at <=> a.created_at }
-    @total  = @transactions.map(&:amount).sum
+    @total = @transactions.map(&:amount).sum
   end
 
   def new

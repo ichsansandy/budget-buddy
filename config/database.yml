@@ -17,4 +17,4 @@ test:
 
 production:
   <<: *default
-  database: budget_buddy_prod
+  url: <%= ENV['DATABASE_URL'] %>

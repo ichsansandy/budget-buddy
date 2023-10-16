@@ -14,6 +14,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [📽️ Video Walkthrogh ](#️-video-walkthrogh-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -55,13 +57,21 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO
+<!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://stock-wise.vercel.app/)
+- [Live Demo Link](https://budget-buddy-hbhv.onrender.com)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 📽️ Video Walkthrogh <a name="video-walkthroug"></a>
+
+- [Video Walkthrough](https://drive.google.com/file/d/1wDhPkXxslwH0K0BSJIsDzuB5ENz8AlY0/view?usp=sharing)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
